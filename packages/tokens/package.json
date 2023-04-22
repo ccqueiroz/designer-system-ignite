@@ -7,9 +7,11 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts* --fix"
   },
   "devDependencies": {
+    "@design-system-ignite-ui/eslint-config": "*",
     "@design-system-ignite-ui/ts-config": "*",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"

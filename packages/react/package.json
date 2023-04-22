@@ -1,9 +1,11 @@
 {
   "name": "@design-system-ignite-ui/react",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Caio Queiroz",
   "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch"

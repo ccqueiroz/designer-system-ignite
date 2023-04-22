@@ -2,7 +2,6 @@
   "name": "@design-system-ignite-ui/react",
   "version": "1.0.0",
   "author": "Caio Queiroz",
-  "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -11,8 +10,10 @@
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
   },
   "devDependencies": {
+    "@design-system-ignite-ui/ts-config": "*",
     "@design-system-ignite-ui/tokens": "*",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
-  }
+  },
+  "license": "MIT"
 }

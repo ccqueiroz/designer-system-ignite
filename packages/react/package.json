@@ -20,5 +20,8 @@
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
+  }
 }

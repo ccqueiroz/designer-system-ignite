@@ -20,12 +20,19 @@ const config = {
   core: {
     builder: {
       name: '@storybook/builder-vite',
-      options: {}
+      options: {},
     },
   },
   docs: {
     autodocs: true,
     defaultName: 'Documentation',
+  },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/designer-system-ignite/';
+    }
+
+    return config;
   },
 };
 export default config;

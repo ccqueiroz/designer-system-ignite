@@ -11,6 +11,7 @@ const config = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-docs/preset',
+    '@storybook/addon-a11y',
   ],
   framework: {
     name: '@storybook/react-vite',

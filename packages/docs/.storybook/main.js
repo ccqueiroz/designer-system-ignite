@@ -27,6 +27,9 @@ const config = {
     autodocs: true,
     defaultName: 'Documentation',
   },
+  features: {
+    storyStoreV7: true,
+  },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
       config.base = '/designer-system-ignite/';

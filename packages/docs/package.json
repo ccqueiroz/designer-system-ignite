@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "storybook dev -p 6006",
+    "dev": "storybook dev -p 6060",
     "build": "storybook build"
   },
   "keywords": [],

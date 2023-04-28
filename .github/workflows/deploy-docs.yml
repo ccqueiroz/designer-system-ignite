@@ -8,6 +8,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -15,14 +18,14 @@ jobs:
     - name: Seteup NodeJs
       uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: ${{ matrix.node-version }}
 
-    - run: npm ci
+    - run: yarn install --frozen-lockfile
 
-    - run: npm run build
+    - run: yarn build --prod
 
     - name: Deploy storybook
       working-directory: ./packages/docs
-      run: npm run deploy-story-book -- --ci --existing-output-dir=storybook-static
+      run: yarn deploy-story-book -- --ci --existing-output-dir=storybook-static
       env:
         GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}

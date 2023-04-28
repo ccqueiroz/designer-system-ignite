@@ -10,13 +10,21 @@ const config = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-docs/preset',
   ],
   framework: {
     name: '@storybook/react-vite',
     options: {},
   },
+  core: {
+    builder: {
+      name: '@storybook/builder-vite',
+      options: {}
+    },
+  },
   docs: {
-    autodocs: 'tag',
+    autodocs: true,
+    defaultName: 'Documentation',
   },
 };
 export default config;

@@ -1,5 +1,11 @@
 # @design-system-ignite-ui-caio-queiroz/react
 
+## 5.0.0
+
+### Major Changes
+
+- fluxo de melhorias
+
 ## 4.0.0
 
 ### Major Changes

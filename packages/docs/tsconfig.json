@@ -1,4 +1,4 @@
 {
-  "extends": "@design-system-ignite-ui/ts-config/react.json",
+  "extends": "@design-system-ignite-ui-caio-queiroz/ts-config/react.json",
   "input": ["src"]
 }

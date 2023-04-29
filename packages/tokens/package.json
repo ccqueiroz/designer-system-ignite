@@ -1,5 +1,5 @@
 {
-  "name": "@design-system-ignite-ui/tokens",
+  "name": "@design-system-ignite-ui-caio-queiroz/tokens",
   "version": "1.0.0",
   "author": "Caio Queiroz",
   "main": "./dist/index.js",
@@ -11,8 +11,8 @@
     "lint": "eslint src/**/*.ts* --fix"
   },
   "devDependencies": {
-    "@design-system-ignite-ui/eslint-config": "*",
-    "@design-system-ignite-ui/ts-config": "*",
+    "@design-system-ignite-ui-caio-queiroz/eslint-config": "*",
+    "@design-system-ignite-ui-caio-queiroz/ts-config": "*",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },

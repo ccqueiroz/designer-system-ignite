@@ -1,5 +1,11 @@
 # @design-system-ignite-ui-caio-queiroz/eslint-config
 
+## 4.0.0
+
+### Major Changes
+
+- add cache ci cd
+
 ## 3.0.0
 
 ### Major Changes
